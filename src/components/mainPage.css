@@ -1,0 +1,33 @@
+.container-style{
+    display: grid;
+}
+
+.hr-style{
+    color:gray;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.heading-style{
+    display: block;
+    font-size:30px;
+    font-weight: bolder;
+    font-style:italic;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.nav-style{
+    display:flex;
+    margin-top:10px;
+    background-color:gold;
+    justify-content: center;
+}
+.navbtn-style{  
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+    color:black;
+    font-size: 20px;
+    
+
+}
