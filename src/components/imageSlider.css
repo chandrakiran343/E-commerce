@@ -1,5 +1,5 @@
 .slider-container{
-    margin-top: 30px;
+    margin-top: 5px;
 }
 @keyframes slider{
     0% { left: 0%; }
@@ -29,7 +29,7 @@ div#slider figure span{
     width:100vw;
     float:left;
 }
-div#slider figure span img#p5 { width: 100%; height: 60vh;float: left;}
+div#slider figure span img#p5 { width: 120%; height: 40vh;float: left;}
 div#slider figure { 
     display: flex;
     flex-direction:row;
