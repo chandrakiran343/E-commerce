@@ -1,7 +1,7 @@
 @keyframes color{
-0% {background-color: white;color:black}
-30% {background-color: black;color:white}
-75% {background-color: green;color:red}
+25% {background-color: black;color:white}
+50% {background-color: white;color:black}
+75% {background-color: black;color:white}
 100% {background-color: white;color:black}
 }
 .container-style{
@@ -46,7 +46,7 @@ input{
 .nav-style{
     display:flex;
     width:100vw;
-    gap: 5px;
+    gap: 10px;
     margin-top:10px;
     background-color:gold;
     justify-content: center;

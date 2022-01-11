@@ -1,0 +1,21 @@
+.card-style{
+    display:flex;
+    height:70vh;
+    width:25vw;
+    background-color:pink;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction:column;
+}
+img{
+    width:95%;
+    height:90%;
+}
+button{
+    border:none;
+}
+span{
+    font-style: oblique;
+    font-weight:500;
+    font-size:20px;
+}
