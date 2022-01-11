@@ -1,34 +1,48 @@
 @keyframes color{
-20% {background-color: black;color:white}
-45% {background-color: green;color:red}
-65% {background-color: black;color:white}
-85% {background-color: black;color:white}
+0% {background-color: white;color:black}
+30% {background-color: black;color:white}
+75% {background-color: green;color:red}
 100% {background-color: white;color:black}
 }
 .container-style{
     display: grid;
     justify-items: center;
 }
-
-.hr-style{
-    color:gray;
+hr{
+    background-color:black;
     margin-top:10px;
-    margin-bottom:10px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(255 255 255);
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(241 243 246);
 }
 .heading-style{
     display: flex;
-    font-size:30px;
+    font-size:40px;
     font-weight: bolder;
     font-style:italic;
     text-align: center;
-    width:100vw;
+    width: 90vw;
     height:10vh;
     align-items: center;
-    justify-content:center;
-    margin-top:20px;
-    margin-bottom:20px;
-    animation:5s color infinite;
+    justify-content:flex-start;
+    margin-top:10px;
+    border-color: black;
+    
 }
+input{
+    width: 30vw;
+    height:4.8vh;
+}
+
 .nav-style{
     display:flex;
     width:100vw;
@@ -50,4 +64,9 @@ nav#navi button{
     align-items: center;
 
 }
-
+.card-container{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 50vh;
+    justify-content: center;
+}
