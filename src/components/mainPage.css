@@ -1,8 +1,7 @@
 @keyframes color{
-20% {background-color: black;color:white}
-45% {background-color: green;color:red}
-65% {background-color: black;color:white}
-85% {background-color: black;color:white}
+25% {background-color: black;color:white}
+50% {background-color: white;color:black}
+75% {background-color: black;color:white}
 100% {background-color: white;color:black}
 }
 .container-style{
@@ -12,8 +11,8 @@
 
 .hr-style{
     color:gray;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top:5px;
+    margin-bottom:5px;
 }
 .heading-style{
     display: flex;
@@ -27,12 +26,12 @@
     justify-content:center;
     margin-top:20px;
     margin-bottom:20px;
-    animation:5s color infinite;
+    animation: 5s color infinite;
 }
 .nav-style{
     display:flex;
     width:100vw;
-    gap: 5px;
+    gap: 10px;
     margin-top:10px;
     background-color:gold;
     justify-content: center;
