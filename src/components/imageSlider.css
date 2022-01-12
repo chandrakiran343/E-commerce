@@ -18,7 +18,7 @@ div#slider {
     justify-content: flex-start;
     position: relative;
     gap: 20px;
-    width:48vw;
+    width: 46vw;
     overflow:hidden;
     
 }
@@ -34,14 +34,11 @@ div#slider figure {
     display: flex;
     flex-direction:row;
     position: relative;
-    width: 142vw;
-    gap:35px;
+    width: 161vw;
+    gap:5px;
     justify-content:space-around;
     margin: 0;
     text-align: left;
     font-size: 0;
     animation: 15s slider infinite; 
 }
-
-
-
