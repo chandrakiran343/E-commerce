@@ -25,18 +25,15 @@ hr{
     background-color:rgb(241 243 246);
 }
 .heading-style{
-    display: flex;
+    display: block;
     font-size:40px;
     font-weight: bolder;
     font-style:italic;
     text-align: center;
     width: 90vw;
     height:10vh;
-    align-items: center;
-    justify-content:flex-start;
-    margin-top:10px;
     border-color: black;
-    
+    animation: 5s color infinite;
 }
 input{
     width: 30vw;
@@ -62,11 +59,15 @@ nav#navi button{
     display: flex;
     justify-content:center;
     align-items: center;
-
 }
 .card-container{
     display: flex;
     flex-wrap:wrap;
     margin-top: 50vh;
     justify-content: center;
+}
+
+#space{
+    margin-top: 10px;
+    align-items: center;
 }
