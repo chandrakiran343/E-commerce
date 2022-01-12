@@ -2,20 +2,19 @@
     display:flex;
     height:70vh;
     width:25vw;
-    background-color:pink;
+    background-color:orange;
     align-items:center;
     justify-content:space-evenly;
     flex-direction:column;
 }
-img{
+img#card-img{
     width:95%;
     height:90%;
 }
 button{
     border:none;
 }
-span{
-    font-style: oblique;
-    font-weight:500;
+span#card-text{
+    font-weight:900;
     font-size:20px;
 }
