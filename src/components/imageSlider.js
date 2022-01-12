@@ -14,11 +14,8 @@ const imageSlider = () => {
         <div id='slider' className="card-holder">
         <figure>
         {imageArray.map(i=>{return (<span><img id='p5' src={i} onClick={(i)=>open(i)} className='img-style' alt='yoking'  ></img></span>)})}
-</figure>  
-        
-
-    </div>
-    
+        </figure>  
+        </div>
         </div>);
 }
  
