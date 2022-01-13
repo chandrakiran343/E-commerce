@@ -1,40 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './mainPage.css'
 import ImageSlider from './imageSlider'
 import CategoryList from './CategoryList'
 import Card from './card.js'
+import Header from './header';
 
-
-const MainPage = () => {
-
-    const [search,setSearch] = useState('')
-
-    const handleSearch = () => {
-        console.log(search)
-    }
-    
-    
-    return (<div className="container-style">
+const MainPage = () => { 
+        return (<div className="container-style">
         <hr className="hr-style"></hr>  
-        <div className="header">
-            <span className="heading-style">Book Store
-            </span>
-            <div className="search-style">
-                <input onChange={(e)=>{setSearch(e.target.value)}} style={{fontSize:"20px",fontFamily:'sans-serif',marginRight:'10px',borderColor:'purple',textAlign:'center'}} type="text"/>
-                    <button type='submit' onClick={()=>{handleSearch()}} className="btn btn-primary">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <div className="nav-container">
-                    <nav id='navi' className="nav-style">
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-primary"><span className="navbtn-style">Home</span></button>
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-info" ><span className="navbtn-style">About Us</span></button>
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-info"><span className="navbtn-style">Menu</span></button>
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-success"><span className="navbtn-style">Order History</span></button>
-                    </nav>
-                </div>
-            </div>
-            
-        </div>
+        <Header/>
         <hr className="hr-style"></hr>
         <div className="upper-body">
         <CategoryList />
