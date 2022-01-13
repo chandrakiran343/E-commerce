@@ -11,7 +11,7 @@ const CategoryList = () => {
             <div id='#category' className="category-container">
                 <p className='heading'>Categories</p>
                 {categoryArray.map(category=>{return(
-                        <button style={{fontSize: '18px',marginBottom:'5px',textAlign:'center'}} className="btn btn-light"><span>{category}</span></button>
+                        <button style={{fontSize: '18px',marginBottom:'5px',textAlign:'center',width:'100%'}} className="btn btn-info"><span>{category}</span></button>
                 )})}
             </div>
         </div>
