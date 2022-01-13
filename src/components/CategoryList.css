@@ -1,0 +1,23 @@
+.side-bar{
+    position: relative;
+    left: 20px;
+    background-color: #f8f9fa;
+    height:112vh;
+    border: 1px solid black;
+}
+.heading{
+    font-size:20px;
+    margin-left:5px;
+    font-weight:500;
+    border-bottom: 1px solid black;
+    padding:10px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+.category-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:12vw; 
+}

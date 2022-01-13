@@ -16,14 +16,17 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:70%;
+    margin-left: 30px;
+    border: 2px solid black;
+    justify-content: flex-start;
     background-color:rgb(241,243,246,1);
+    padding: 10px 10px 10px 10px;
 }
 .heading-style{
     display: flex;
@@ -41,26 +44,47 @@ input{
     width: 30vw;
     height:4.8vh;
 }
+.nav-container{
+    display: flex;
+    justify-content: center;
+    width:90vw;
+    background-color:black;
+    align-items: center;
+    
+}
 
 .nav-style{
     display:flex;
     width:100%;
     gap: 10px;
-    margin-top:10px;
     background-color:gold;
+    border: 2px solid black !important;
     justify-content: center;
 }
 .navbtn-style{  
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
     font-weight: bold;
     color:black;
-    font-size: 20px;
+    font-size: 18px;
 }
 nav#navi button{
     display: flex;
     justify-content:center;
     align-items: center;
+}
+.upper-body{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width:60vw;
+    flex-direction: row;
 }
 .banner-style{
     display: flex;
@@ -104,4 +128,7 @@ nav#navi button{
     display:flex;
     justify-content:center;
     width:90vw;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:red;
 }
