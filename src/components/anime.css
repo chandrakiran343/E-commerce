@@ -1,0 +1,107 @@
+.body{
+    display:flex;
+    height:100vh;
+    width:90vw;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction:column;
+}
+
+.lel{
+    display: block;
+    align-items: center;
+    background-color:rgb(0, 0, 255,0.7);
+    color: rgb(255, 0, 0,1);
+    width:15vw;
+    height:10vh;
+    font-size:30px;
+    font-weight:bolder;
+    border-radius: 10px;
+    position: relative;
+    border:none;
+}
+.lel.animating{
+    background-color: transparent;
+    color:transparent;
+    cursor:default;
+    animation: 0ms ball 1500ms;
+    animation-fill-mode: forwards;
+}
+.lel::before{
+    content: "";
+    display: none;
+    background-color: red;
+    position: absolute;
+    font-size:30px;
+    inset:0;
+    border-radius: 0.5em;
+    animation: 500ms fade cubic-bezier(0.27, 0.38, 0.16, 1.44);
+    animation-fill-mode: forwards;
+    
+
+}
+.lel.animating::before{
+    display: block;
+    
+    
+}
+@keyframes fade {
+    100%{   
+        left:-50%;
+        right:-50%;
+        top:40%;
+        bottom:40%;
+        border-radius:0.25em;
+    }
+    
+}
+@keyframes color {
+    100%{left:-50%;right:-50%;}
+}
+.lel.animating::after{
+    content:"";
+    background-color:blue;
+    position: absolute;
+    left:100%;
+    right:100%;
+    top:40%;
+    bottom:40%;
+    border-radius:0.25em;
+    animation: 1s color 400ms;
+    animation-fill-mode: forwards;  
+}
+.svg-container{
+    color:transparent;
+    height:0;
+    width:0;
+}
+
+.lel.animating + .svg-container{  
+    width:0;
+    height:0;
+    color:transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0.5em;
+    animation: 100ms circle 1500ms cubic-bezier(0.26, 0.6, 0.46, 1.7);
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle {
+    100%{
+        color: red;
+        background-color:blue; 
+        height:100px;
+        width:100px;
+        border-radius:100%;   
+    }
+}
+@keyframes ball {
+    100%{
+        width:0;
+        height:0;
+        padding:0;
+    }
+}
