@@ -4,6 +4,7 @@ import ImageSlider from './imageSlider'
 import CategoryList from './CategoryList'
 import Card from './card.js'
 import Header from './header';
+import Footer from './footer';
 
 const MainPage = () => { 
         return (<div className="container-style">
@@ -33,6 +34,7 @@ const MainPage = () => {
             </div>
         </div>
         </div>
+        <Footer/>
         </div>);
 }
  
