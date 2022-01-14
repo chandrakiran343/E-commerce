@@ -13,7 +13,8 @@
     padding:10px 0px 10px 0px;
     text-align: center;
     width: 100%;
-    color: black;
+    color: red;
+    background-color: yellow;
 }
 .category-container{
     display: flex;

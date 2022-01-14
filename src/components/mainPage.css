@@ -38,8 +38,7 @@ hr{
     width: 90vw;
     height:10vh;
     border-color: black;
-    animation: 10s color infinite;
-    margin-bottom:10px;
+    animation: 15s color infinite;
 }
 input{
     width: 30vw;
@@ -131,5 +130,4 @@ nav#navi button{
     width:90vw;
     flex-wrap: wrap;
     align-items: center;
-    background-color:red;
 }
