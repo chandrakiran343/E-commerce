@@ -73,8 +73,8 @@
 }
 .svg-container{
     color:transparent;
-    height:0;
-    width:0;
+    position: absolute;
+    
 }
 
 .lel.animating + .svg-container{  
@@ -93,8 +93,8 @@
     100%{
         color: red;
         background-color:blue; 
-        height:100px;
-        width:100px;
+        height:150px;
+        width:150px;
         border-radius:100%;   
     }
 }

@@ -6,7 +6,10 @@ import Card from './card.js'
 import Header from './header';
 import Footer from './footer';
 
+
 const MainPage = () => { 
+
+
         return (<div className="container-style">
         <hr className="hr-style"></hr>  
         <Header/>

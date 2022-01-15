@@ -1,10 +1,19 @@
 import React,{useState} from 'react';
 import './header.css'
-const Header = () => {
-    const [search,setSearch] = useState('')
+import { useNavigate } from "react-router-dom";
 
+const Header = (
+    {id}
+) => {
+    const [search,setSearch] = useState('')
+    const navigate = useNavigate();
     const handleSearch = () => {
         console.log(search)
+    }
+
+    const handleClick=(route)=>{
+        console.log(route)
+        navigate(route);
     }
     return ( 
         <div>
@@ -18,14 +27,13 @@ const Header = () => {
                     </button>
                     <div className="nav-container">
                     <nav id='navi' className="nav-style">
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Home</span></button>
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">About Us</span></button>
+                        <button onClick={()=>handleClick('/')} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Home</span></button>
+                        <a style={{textDecoration:'none'}} href='#footer'><button onClick={()=>{}} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">About Us</span></button></a>
                         <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Menu</span></button>
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Order History</span></button>
+                        <button onClick={()=>handleClick('/OrderHistory')} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Order History</span></button>
                     </nav>
                 </div>
             </div>
-            
         </div>
             
         </div>

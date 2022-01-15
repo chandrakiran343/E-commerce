@@ -3,7 +3,7 @@ import './footer.css';
 
 const Footer = () => {
     return ( 
-    <div>
+    <div id='footer'>
         <div className='absolute'>
             <u><h5>About Us:</h5></u>
             <h6 className='first'>This Web Application is done by: D.Chadra Kiran</h6>
