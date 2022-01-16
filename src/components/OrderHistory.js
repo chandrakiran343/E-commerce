@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './header';
-import './OrderHistory.css'
-import Footer from './footer.js'
+import './OrderHistory.css';
+import Footer from './footer';
 
 const OrderHistory = () => {
-    return (<div> 
+    return (<div className='first'> 
     <div className="container-style">
     <hr className="hr-style"></hr>  
     <Header/>
@@ -19,8 +19,10 @@ const OrderHistory = () => {
            <h5>Time: 10:05:05</h5>
            <h5>Total Amount: ₹408</h5>
         </div>
-        <hr className='hr'></hr>           
+        <hr className='hr'></hr> 
         <h3>Items:</h3>
+        <hr className='hr'></hr> 
+        <div className='order'>
         <div className='order'>
         <span className='image'><img src='https://m.media-amazon.com/images/P/B07F6C99Q7.01._SCLZZZZZZZ_SX500_.jpg' alt='A.P.J Abdul Kalam'></img></span>
         <div className='iblock'>
@@ -30,7 +32,7 @@ const OrderHistory = () => {
             <h5 className='ih5'>Price: ₹279</h5>
         </div>
         </div>
-        <hr className='hr'></hr> 
+        <div className='vr'></div> 
         <div className='order'>
         <span className='image'><img src='https://images-na.ssl-images-amazon.com/images/I/41n1edvVlLL._SX317_BO1,204,203,200_.jpg' alt='Walter Isaacson'></img></span>
         <div className='iblock'>
@@ -38,7 +40,8 @@ const OrderHistory = () => {
             <h6> By Walter Isaacson</h6>
             <h5 className='ih5'>Quantity: 1</h5>
             <h5 className='ih5'>Price: ₹129</h5>
-        </div>
+        </div>  
+        </div>  
         </div>
         </div>
         <div className='block'>
@@ -50,6 +53,8 @@ const OrderHistory = () => {
         </div>
         <hr className='hr'></hr>           
         <h3>Items:</h3>
+        <hr className='hr'></hr> 
+        <div className='order'>
         <div className='order'>
         <span className='image'><img src='https://m.media-amazon.com/images/P/B07F6C99Q7.01._SCLZZZZZZZ_SX500_.jpg' alt='A.P.J Abdul Kalam'></img></span>
         <div className='iblock'>
@@ -59,7 +64,7 @@ const OrderHistory = () => {
             <h5 className='ih5'>Price: ₹279</h5>
         </div>
         </div>
-        <hr className='hr'></hr> 
+        <div className='vr'></div> 
         <div className='order'>
         <span className='image'><img src='https://images-na.ssl-images-amazon.com/images/I/41n1edvVlLL._SX317_BO1,204,203,200_.jpg' alt='Walter Isaacson'></img></span>
         <div className='iblock'>
@@ -70,7 +75,8 @@ const OrderHistory = () => {
         </div>
         </div>
         </div>
-        <Footer />
+        </div>
+        <Footer/>
    </div>
     );
 }
