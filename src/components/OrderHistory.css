@@ -25,19 +25,20 @@ h5{
     padding-top: 10px;
 }
 img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: 2px solid black !important;
 }
 .hr {
         margin-top: 1px;
         margin-bottom: 1px;
         border: 1px solid black;
-  }
+}
 .order{
     display: flex;
     flex-direction: row;
     padding: 10px;
+    padding-right: 0px;
 }
 .iblock{
     display: flex;
@@ -49,4 +50,15 @@ img{
 h6{
     padding-left: 70px;
     margin-top: 0px;
+}
+first{
+    justify-content: center;
+    align-items: center;
+}
+.vr{
+        border-left: 2px black;
+        margin-top: 0px;
+        border-style: solid;
+        height: auto;
+        margin-left: 0px;
 }
