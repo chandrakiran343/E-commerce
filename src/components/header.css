@@ -14,14 +14,11 @@
         display: grid;
         justify-items: center;
     }
-    hr{
-        background-color:black;
-        margin-top:10px;
-    }
     .header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 30px;
     }
     .body{
         display: flex;
@@ -44,10 +41,6 @@
         height:10vh;
         border-color: black;
         animation: 15s color infinite;
-    }
-    input{
-        width: 30vw;
-        height:4.8vh;
     }
     .nav-container{
         display: flex;
@@ -119,7 +112,6 @@
         margin-top: 10vh;
         font-family: sans-serif;
         background-color:rgb(152, 251, 152,0.5);
-        
     }
     
     .series-name{
@@ -135,5 +127,5 @@
         width:90vw;
         flex-wrap: wrap;
         align-items: center;
-        margin-top: 0px;
+        margin-top: 10px;
     }

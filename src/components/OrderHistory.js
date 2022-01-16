@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './header';
 import './OrderHistory.css'
+import Footer from './footer.js'
 
 const OrderHistory = () => {
     return (<div> 
@@ -69,6 +70,7 @@ const OrderHistory = () => {
         </div>
         </div>
         </div>
+        <Footer />
    </div>
     );
 }

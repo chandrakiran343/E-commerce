@@ -17,7 +17,7 @@ const Header = (
     }
     return ( 
         <div>
-                    <div className="header">
+            <div className="header">
             <span className="heading-style">Book Store
             </span>
             <div className="search-style">

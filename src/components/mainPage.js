@@ -15,7 +15,7 @@ const MainPage = () => {
         <Header/>
         <hr className="hr-style"></hr>
         <div className="upper-body">
-        <CategoryList />
+        <CategoryList loading={false} />
         <div className="body">
         <span style={{fontSize:'30px',fontWeight:'bolder',marginLeft:'10vh'}}>Popular Picks</span>
             <hr />
