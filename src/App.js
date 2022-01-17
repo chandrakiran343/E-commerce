@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css'
-
+import KartScreen from './components/KartScreen'
 import MainPage from "./components/mainPage";
 import OrderHistory from "./components/OrderHistory"
 import CategoryView from "./components/CategoryView";
@@ -22,7 +22,7 @@ function App() {
   return (
    <Router >
     <Routes>
-    <Route path="/test" element={<CategoryView />} />
+    <Route path="/test" element={<KartScreen />} />
     <Route path="/test2" element={<Spinner />} />
     <Route path='/' element={<MainPage />} />
     <Route path='/OrderHistory' element={<OrderHistory />} />

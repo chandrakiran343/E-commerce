@@ -13,9 +13,73 @@
     flex-direction: row;
 
 }
-.span-square{
+@keyframes spin1 {
+    0%{right:3%;
+        bottom:5%}
+    50%{transform:rotate(45deg)}
+    
+    100%{right:0%;bottom:0%;background-color:red}
+    
+}
+@keyframes spin2 {
+    0%{ left:3%;
+        bottom: 5%}
+    50%{transform:rotate(-45deg)}
+
+    100%{left:0%;bottom:0%;background-color:blue;}
+    
+    
+}
+@keyframes spin3 {
+    0%{right:3%;
+        top:5%}
+    50%{transform:rotate(-45deg)}
+    
+    100%{right:0%;top:0%;background-color:blue}
+    
+}
+@keyframes spin4 {
+    
+    0% { left:3%;
+        top:5%}
+    50%{transform:rotate(45deg)}
+    
+    100%{left:0%;top:0%;background-color:red}
+    
+}
+.span-square1{
+    position:relative;
     width:4%;
     height:15%;
-    background-color:black;
+    background-color:blue;
+    animation: 1.5s spin1  infinite;
+    animation-fill-mode: forwards;
+    
+}
+.span-square2{
+    position:relative;
+    width:4%;
+    height:15%;
+    background-color:red;
+    animation: 1.5s spin2 infinite;
+    animation-fill-mode: forwards;
+   
+}
+.span-square3{
+    position:relative;
+    width:4%;
+    height:15%;
+    background-color:red;
+    animation: 1.5s spin3  infinite;
+    animation-fill-mode: forwards;
+    
+}
+.span-square4{
+    position:relative;
+    width:4%;
+    height:15%;
+    background-color:blue;
+    animation: 1.5s spin4  infinite;
+    animation-fill-mode: forwards;
 }
 

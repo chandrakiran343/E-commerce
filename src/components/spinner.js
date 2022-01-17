@@ -4,12 +4,12 @@ import './spinner.css'
 const Spinner = () => {
     return (<div>
             <div className="spinner-container-top">
-                <span style={{backgroundColor:'blue'}} className="span-square"></span>
-                <span style={{backgroundColor:'red'}} className="span-square"></span>
+                <span  className="span-square1"></span>
+                <span  className="span-square2"></span>
             </div>
             <div className="spinner-container-bottom">
-                <span style={{backgroundColor:'red'}} className="span-square"></span>
-                <span style={{backgroundColor:'blue'}} className="span-square"></span>
+                <span  className="span-square3"></span>
+                <span  className="span-square4"></span>
             </div>
         
         </div> );
