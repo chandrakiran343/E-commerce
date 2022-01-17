@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css'
+
 import MainPage from "./components/mainPage";
 import OrderHistory from "./components/OrderHistory"
 import CategoryView from "./components/CategoryView";
