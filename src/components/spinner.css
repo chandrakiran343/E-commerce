@@ -1,0 +1,21 @@
+.spinner-container-top{
+    display:flex;
+    height:50vh;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.spinner-container-bottom{
+    display:flex;
+    height:50vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+.span-square{
+    width:4%;
+    height:15%;
+    background-color:black;
+}
+
