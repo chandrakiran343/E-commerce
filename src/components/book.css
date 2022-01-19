@@ -1,0 +1,64 @@
+.book-screen-style{
+    display: flex;
+    align-items: center;
+    height:100vh;
+    flex-direction: column;
+}
+
+.book-desc-container{
+    display: flex;
+    flex-direction: row;
+    margin-top:3vh;
+    width:85%;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #fff;
+    height: 75vh;
+    gap:50px;
+}
+.book-image-container{
+    display: flex;
+    width: 23vw;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+.book-image-style{
+    width: 80%;
+    height: 50vh; 
+}
+.book-heading-style{
+    font-size:28px;
+    font-weight:400;
+    color:#0F1111;
+}
+.book-desc-style{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 60%;
+}
+.book-price-style{
+    font-size:15px;
+    font-weight:400;
+    margin-top:5px;
+    width:20%;
+    padding:10px 10px 10px 10px;
+    border:1.5px solid black;
+}
+.book-desc{
+    font-size:14px;
+    line-height:20px;
+    font-weight:400;
+    height:fit-content;
+}
+.addkart-style{
+    width:50%;
+    margin-top:5px;
+    background-color:lightyellow;
+    height:5vh;
+}
