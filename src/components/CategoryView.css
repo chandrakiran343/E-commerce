@@ -39,6 +39,7 @@
 }
 .span-the-image{
     height:85%;
+    cursor: pointer;
     border: 2px solid blue;
     padding: 5px 5px 5px 5px;
 }

@@ -6,6 +6,7 @@
     display: flex;
     width: 28vw;
     justify-content: center;
+    cursor: pointer;
 }
 .image-style{
         width: 80%;

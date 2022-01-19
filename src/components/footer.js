@@ -1,5 +1,7 @@
 import React from 'react';
 import './footer.css';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Footer = () => {
     return ( 
@@ -24,6 +26,7 @@ const Footer = () => {
                 <u><h5>Follow Us:</h5></u>
                 <h6 className='first'>Instagram: <a href='https://www.instagram.com/karthik.924/'>karthik.924</a></h6>
                 <h6 className='tenth'><a href='https://www.instagram.com/chandra_kiran_reddy08/'>chandra_kiran_reddy08</a></h6>
+                <button onClick={()=>{window.scrollTo({top:0,behavior:'smooth'})}} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">About Us</span></button>
             </div>
             </div>
         </div>

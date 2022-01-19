@@ -36,10 +36,15 @@ const firebaseConfig = {
       const docRef = query(collection(db,"items"))
       const docSnap = await getDocs(docRef);
       let categories = [];
+      let docs = []
+      try{
+        docSnap.docs.map(e=>{ return e.data()['books'].forEach(e=>{docs.push(e)})})
+      }catch{}
       docSnap.docs.forEach((e)=>{
           categories.push({value:e.id,id:e.id})
       })
-      return categories;
+      console.log(docs[0])
+      return {categories,docs};
     }
     export const getBooks = async (category) => {
       const docRef = doc(db,"items",category);
@@ -54,15 +59,44 @@ const firebaseConfig = {
     }
 
     export const getOrders = async () => {
-      const docRef = doc(db,'kartStash','orders');
+      const docRef = doc(db,'orderHistory','orders');
       const docSnap = await getDoc(docRef);
       if(docSnap.exists()){
-        const orders = docSnap.data()['books'];
+        const orders = docSnap.data()['history'];
         return orders;
       }
       else{
         console.log('error')
       }
+    }
+
+    export const kartItems = async()=>{
+
+      const docRef = doc(db,'kartStash','Orders')
+      const docSnap = await getDoc(docRef)
+
+      if(docSnap.exists()){ 
+        const items = docSnap.data()['books']
+
+        return items;
+
+      }
+
+    }
+
+    export const setOrder = async (book) =>{
+
+      const docRef = doc(db,'kartStash','Orders')
+
+      const docSnap = await getDoc(docRef)
+      console.log(docSnap)
+
+      const prev = docSnap.data()['books']
+      const order = prev
+      order.push(book)
+      await updateDoc(docRef, {
+        books: order
+      });
     }
     
 

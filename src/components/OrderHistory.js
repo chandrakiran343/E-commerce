@@ -10,7 +10,6 @@ const OrderHistory = () => {
     <Header/>
     <hr className="hr-style"></hr>
     <h1>Order History</h1>
-    
     </div>
     <div className='block'>
         <div className='order'>

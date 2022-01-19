@@ -22,8 +22,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:70%;
-    margin-right:30px;
+    width:80%;
     border: 2px solid black;
     justify-content: flex-start;
     background-color:rgb(241,243,246,1);
@@ -84,23 +83,23 @@ nav#navi button{
     justify-content: center;
     overflow: hidden;
     width:60vw;
+    margin-bottom: 40px;
     flex-direction: row;
 }
 .banner-style{
     display: flex;
-    margin-left:5vh;
     font-family:sans-serif;
-    font-size:35px;
+    font-size:30px;
     align-items:center;
-    font-weight: 400;
+    font-weight: bolder;
     touch-action: auto;
-    justify-content:flex-start;
+    justify-content:center;
 }
 .card-container{
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    margin-top:10vh;
+    margin-top: 5vh;
     gap:20px;
 }
 
@@ -111,17 +110,20 @@ nav#navi button{
 .spotlight-style{
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 20px;
     font-family: sans-serif;
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
     background-color:rgb(152, 251, 152,0.5);
     
 }
 
 .series-name{
     font-size:30px;
-    font-weight: bolder;
+    font-weight: bold;
     margin-left: 5vh;
     font-style: oblique;
+    text-align:center;
 }
 
 .search-style{

@@ -9,12 +9,12 @@ const Anime = () => {
         btn.classList.toggle('animating')
     }
     
-    return ( <div className="body">
-            <button id='b' onClick={handleClick} className='lel'>Nice</button>
+    return ( <div className="anime-body">
+            <button id='b' onClick={handleClick} className='lel'>Place Order</button>
             <div onClick= {handleClick} className='svg-container'>
                 <span className='icon-style'><i  className='fas fa-check fa-3x' /></span>
             </div>
         </div>);
 }
- 
+    
 export default Anime;

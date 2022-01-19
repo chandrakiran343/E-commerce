@@ -52,7 +52,7 @@
     width:4%;
     height:15%;
     background-color:blue;
-    animation: 1.5s spin1  infinite;
+    animation: 500ms spin1  infinite;
     animation-fill-mode: forwards;
     
 }
@@ -61,7 +61,7 @@
     width:4%;
     height:15%;
     background-color:red;
-    animation: 1.5s spin2 infinite;
+    animation: 500ms spin2 infinite;
     animation-fill-mode: forwards;
    
 }
@@ -70,7 +70,7 @@
     width:4%;
     height:15%;
     background-color:red;
-    animation: 1.5s spin3  infinite;
+    animation: 500ms spin3  infinite;
     animation-fill-mode: forwards;
     
 }
@@ -79,7 +79,7 @@
     width:4%;
     height:15%;
     background-color:blue;
-    animation: 1.5s spin4  infinite;
+    animation: 500ms spin4  infinite;
     animation-fill-mode: forwards;
 }
 

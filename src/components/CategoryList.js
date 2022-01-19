@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 
-const CategoryList = ({loading = true}) => {
+const CategoryList = ({loading = true,docs}) => {
 
     const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ const CategoryList = ({loading = true}) => {
         const fetchCategories = async ()=>{
             try{
                 const res = await getCategories()
-                setCategories(res)
+                setCategories(res.categories)
                 setLoad(loading)
             }
             catch{
@@ -27,11 +27,10 @@ const CategoryList = ({loading = true}) => {
         fetchCategories();
     },[])
     const handleClick = (category)=>{
-        navigate(`/Category/${category[0]}/${category}`,{ state: { category: category} })
+        navigate(`/Category/${category[0]}/${category}`,{ state: { category: category, docs}})
         
 
     }
-
 
     
     

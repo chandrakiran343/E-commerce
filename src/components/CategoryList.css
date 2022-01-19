@@ -2,7 +2,7 @@
     position: relative;
     left: 20px;
     background-color: #f8f9fa;
-    height:112vh;
+    height:fit-content;
     border: 1px solid black;
 }
 .heading{
