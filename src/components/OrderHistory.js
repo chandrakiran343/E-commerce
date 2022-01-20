@@ -1,13 +1,33 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import Header from './header';
 import './OrderHistory.css';
 import Footer from './footer';
+import {useLocation} from 'react-router-dom'
+import {fetchOrders} from '../firebase'
 
 const OrderHistory = () => {
+
+    const location = useLocation();
+
+
+    const orders = location.state.orders
+
+    useEffect(()=>{
+        try{
+            const getOrders = async() =>{
+            const lol = await fetchOrders()
+            console.log(lol)
+            }            
+            getOrders();
+
+        }catch{}
+    })
+
+
     return (<div className='first'> 
     <div className="container-style">
     <hr className="hr-style"></hr>  
-    <Header/>
+    <Header docs={location.state} />
     <hr className="hr-style"></hr>
     <h1>Order History</h1>
     </div>

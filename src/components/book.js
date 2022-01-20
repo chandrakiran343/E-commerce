@@ -12,14 +12,14 @@ const Book = () => {
 
 
     const location = useLocation();
+    const Navigate = useNavigate();
 
     console.log(location.state[0].Name)
 
     const handleKart = async (book)=>{
         book.Quantity = 1;
-        // console.log(book)
         await setOrder(book)
-        console.log(666)
+        Navigate('/your-kart',{state: location.state})
     }
 
     return (<div className="book-screen-style">

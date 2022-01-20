@@ -1,9 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import './header.css'
 import { useNavigate } from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
-import {useWindowScroll} from 'react-use'
-//npm i react-use
 
 
 const Header = (
@@ -12,10 +9,6 @@ const Header = (
     const [search,setSearch] = useState('')
     const [result,setResult] = useState()
     const navigate = useNavigate();
-    const handleSearch = () => {
-        
-
-    }
 
     useEffect(()=>{
 
@@ -41,7 +34,7 @@ const Header = (
     const handleClick=(route)=>{
         navigate(route);
     }
-    const scrollToBottom = () => {window.scrollTo({top:1000000,behavior:'smooth'});console.log(666)}
+    const scrollToBottom = () => {window.scrollTo({top:1000000,behavior:'smooth'})}
 
     return (
         <div>
@@ -51,7 +44,7 @@ const Header = (
             <div className="search-style">
                 <div className="search-bar-style">
                     <input onChange={(e)=>{setSearch(e.target.value)}} value={search} style={{fontSize:"20px",fontFamily:'sans-serif',marginRight:'10px',borderColor:'purple',textAlign:'center'}} type="text"/>
-                    <button type='submit' onClick={()=>{handleSearch()}} className="btn btn-primary">
+                    <button type='submit' className="btn btn-primary">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
@@ -64,7 +57,7 @@ const Header = (
                         <button onClick={()=>handleClick('/')} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Home</span></button>
                         <button  onClick={()=>scrollToBottom()} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">About Us</span></button>
                         <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Menu</span></button>
-                        <button onClick={()=>handleClick('/OrderHistory')} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Order History</span></button>
+                        <button onClick={()=>navigate('/OrderHistory',{state: docs})} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Order History</span></button>
                         <button onClick={()=>navigate(`/your-kart`,{state: docs})} className="btn btn-default"><i style={{position:'relative',right:'45%'}} class="fas fa-shopping-cart fa-2x"></i></button>
                     </nav>
                 </div>
