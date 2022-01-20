@@ -43,6 +43,7 @@ const OrderHistory = () => {
         setLoading(false)
         }            
         getOrders();
+        // console.log(order)
 
 
 
@@ -61,8 +62,9 @@ const OrderHistory = () => {
             <span className="order-container">
             <span style={{width: '100%',display: 'flex',flexDirection: 'row',borderBottom:'2px solid black',padding:'3px',justifyContent: 'space-evenly'}}>
                 <span style={{fontSize: '20px',fontWeight: 'bold'}}>Ordered on: {(new Date(i[0].Timestamp).toLocaleDateString('IN'))}</span>
-                <span style={{fontSize: '20px',fontWeight: 'bold'}}>Price: {fetchTotal(i[0].id).price}</span>
-                <span style={{fontSize: '20px',fontWeight: 'bold'}}>items bought: {fetchTotal(i[0].id).quantity}</span>
+                <span style={{fontSize: '20px',fontWeight: 'bold'}}>Time: {(new Date(i[0].Timestamp).toTimeString().slice(0,8))}</span>
+                <span style={{fontSize: '20px',fontWeight: 'bold'}}>Price: ₹{fetchTotal(i[0].id).price}</span>
+                <span style={{fontSize: '20px',fontWeight: 'bold'}}>Items bought: {fetchTotal(i[0].id).quantity}</span>
             </span>
             <span className="row-maker">
             {i.map(e=>{return(
@@ -73,7 +75,7 @@ const OrderHistory = () => {
             <span className="order-item-desc">
                 <span style={{display:'flex',height:'11vh',width:'15vw',fontSize:'18px', overflow:'hidden'}}>{e.Name}</span>
                 <span style={{fontSize:'22px'}}>Quantity:{e.Quantity}</span>
-                <span style={{fontSize:'22px'}}>Price: {e.Price}</span>
+                <span style={{fontSize:'22px'}}>Price: ₹{e.Price}</span>
                 </span>
             </span>
             )})}
