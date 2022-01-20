@@ -79,11 +79,9 @@ const firebaseConfig = {
 
       const docRef = doc(db,'kartStash','Orders')
       const docSnap = await getDoc(docRef)
-
       if(docSnap.exists()){ 
         const items = docSnap.data()['books']
         return items;
-
       }
     }
 

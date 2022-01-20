@@ -25,7 +25,6 @@ h5{
     padding-top: 10px;
 }
 img{
-    height: 150px;
     width: 150px;
     border: 2px solid black !important;
 }
@@ -61,4 +60,50 @@ first{
         border-style: solid;
         height: auto;
         margin-left: 0px;
+}
+.history-orders-container{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 90vw;
+    height: fit-content;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.order-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 10px;
+    width:95%;
+    padding: 10px;
+    border: 2px solid black;
+    gap:10px;
+    overflow-x: scroll !important;
+}
+.row-maker{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width:100%;
+    padding: 10px;
+    gap:20px;
+    overflow-x: scroll !important;
+}
+.order-item-container{
+    display: flex;
+    flex-direction: row;
+    width:40%;
+    border: 2px solid black;
+    justify-content: flex-start;
+}
+.order-item-desc{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:20%;
+    margin-left: 20px;
 }

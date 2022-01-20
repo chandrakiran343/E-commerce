@@ -14,7 +14,7 @@ const Header = (
 
         setResult()
 
-        if(docs.length > 0 && search.length > 2){
+        if(docs.length > 0 && search.length >= 2){
             let names = docs.map(e=>{return(e.Name)})
             let authors = docs.map(e=>{return(e.Author)})
             let searchQuery = search.toLowerCase()

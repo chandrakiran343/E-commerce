@@ -18,7 +18,7 @@ const Anime = ({docs,orders}) => {
         const btn = document.getElementById('b')
         btn.classList.toggle('animating')
         orders.forEach(i=>{i.Timestamp = new Date().getTime()})
-        setTimeout(placeOrder,3000)
+        setTimeout(placeOrder,2500)
     }
     const placeOrder = () => {
         doOrder(orders)

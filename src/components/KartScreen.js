@@ -21,7 +21,7 @@ const KartScreen = () => {
     
     useEffect(()=>{
         try{
-            const fetchItems = async()=>{
+            const fetchItems = async () => {
                 const books = await kartItems();
                 console.log(books)
                 setOrder(books)
@@ -52,8 +52,6 @@ const KartScreen = () => {
 
 
     
-
-
     
    
     const handleIncrement = (id) =>{
