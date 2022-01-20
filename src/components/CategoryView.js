@@ -20,7 +20,7 @@ const CategoryView = () => {
 
     const category = location.state.category
 
-    console.log(location)
+    // console.log(location)
     
     useEffect(() => {
         const fetchBooks = async () =>{

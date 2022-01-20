@@ -26,6 +26,7 @@ h5{
 }
 img{
     width: 150px;
+    height: 200px;
     border: 2px solid black !important;
 }
 .hr {
@@ -97,6 +98,7 @@ first{
     display: flex;
     flex-direction: row;
     width:40%;
+    height:20%;
     border: 2px solid black;
     justify-content: flex-start;
 }

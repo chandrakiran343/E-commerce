@@ -13,16 +13,15 @@ const Header = (
     useEffect(()=>{
 
         setResult()
-
         if(docs.length > 0 && search.length >= 2){
             let names = docs.map(e=>{return(e.Name)})
-            let authors = docs.map(e=>{return(e.Author)})
+            // let authors = docs.map(e=>{return(e.Author)})
             let searchQuery = search.toLowerCase()
             let searchNames = names.filter(i=>i.slice(0,searchQuery.length).toLowerCase()===searchQuery)
-            let searchAuthors = authors.filter(i=>i.slice(0,searchQuery.length).toLowerCase()===searchQuery)
+            // let searchAuthors = authors.filter(i=>i.slice(0,searchQuery.length).toLowerCase()===searchQuery)
             setResult(searchNames)
         }
-        console.log(result)
+        // console.log(result)
     },[search])
 
     const handleRoute = (obj)=>{
@@ -56,7 +55,6 @@ const Header = (
                     <nav id='navi' className="nav-style">
                         <button onClick={()=>handleClick('/')} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Home</span></button>
                         <button  onClick={()=>scrollToBottom()} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">About Us</span></button>
-                        <button style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Menu</span></button>
                         <button onClick={()=>navigate('/OrderHistory',{state: docs})} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Order History</span></button>
                         <button onClick={()=>navigate(`/your-kart`,{state: docs})} className="btn btn-default"><i style={{position:'relative',right:'45%'}} class="fas fa-shopping-cart fa-2x"></i></button>
                     </nav>

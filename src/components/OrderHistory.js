@@ -16,7 +16,6 @@ const OrderHistory = () => {
 
 
     // const orders = location.state.orders
-
     const fetchTotal = (id) => {
         let lol = order
         let price = 0;
@@ -25,14 +24,16 @@ const OrderHistory = () => {
         lol = lol.orders.filter((order) => order[0].id===id)
         // console.log(lol[0])
         lol[0].forEach(i=>{price += i.Price;quan += i.Quantity})
-        console.log(price)
-        console.log(quan)
         return({ price: price, quantity: quan})
 
     }
+
+    
     useEffect(()=>{
         
         try{
+            
+        console.log(order)
             
         }catch{}
     },[])
@@ -45,6 +46,8 @@ const OrderHistory = () => {
 
 
 
+
+
     return (loading?<Spinner />:
         <div className='first'> 
     <div className="container-style">
@@ -54,7 +57,7 @@ const OrderHistory = () => {
     <h1>Order History</h1>
     <div className='history-orders-container'>
         {            
-            order.orders.reverse().map(i=>{return(
+            order.orders.map(i=>{return(
             <span className="order-container">
             <span style={{width: '100%',display: 'flex',flexDirection: 'row',borderBottom:'2px solid black',padding:'3px',justifyContent: 'space-evenly'}}>
                 <span style={{fontSize: '20px',fontWeight: 'bold'}}>Ordered on: {(new Date(i[0].Timestamp).toLocaleDateString('IN'))}</span>

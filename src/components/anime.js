@@ -9,7 +9,6 @@ const Anime = ({docs,orders}) => {
     const navigate = useNavigate();
 
     const doOrder = async(orders)=>{
-        console.log(orders)
         await PlaceOrder(orders)
     }
 
@@ -18,10 +17,10 @@ const Anime = ({docs,orders}) => {
         const btn = document.getElementById('b')
         btn.classList.toggle('animating')
         orders.forEach(i=>{i.Timestamp = new Date().getTime()})
+        doOrder(orders)
         setTimeout(placeOrder,2500)
     }
     const placeOrder = () => {
-        doOrder(orders)
         navigate('/OrderHistory',{state: {docs, orders}})
     }
     

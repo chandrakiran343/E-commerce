@@ -15,7 +15,6 @@ const MainPage = () => {
 
     // const location = useLocation();
 
-    const navigate = useNavigate();
     const [documents, setDocs] = useState();
     const [load,setLoad] = useState(true);
     const [authorFocus, setAuthor] = useState(); 

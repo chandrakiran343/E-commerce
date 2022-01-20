@@ -34,7 +34,6 @@
     0%{right:3%;
         top:5%}
     50%{transform:rotate(-45deg)}
-    
     100%{right:0%;top:0%;background-color:blue}
     
 }

@@ -29,7 +29,6 @@ const CategoryList = ({loading = true,docs}) => {
     const handleClick = (category)=>{
         navigate(`/Category/${category[0]}/${category}`,{ state: { category: category, docs}})
         
-
     }
 
     
