@@ -56,7 +56,7 @@ const Header = (
                         <button onClick={()=>handleClick('/')} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Home</span></button>
                         <button  onClick={()=>scrollToBottom()} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">About Us</span></button>
                         <button onClick={()=>navigate('/OrderHistory',{state: docs})} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default"><span className="navbtn-style">Order History</span></button>
-                        <button onClick={()=>navigate(`/your-kart`,{state: docs})} className="btn btn-default"><i style={{position:'relative',right:'45%'}} class="fas fa-shopping-cart fa-2x"></i></button>
+                        <button onClick={()=>navigate(`/your-kart`,{state: docs})} className="btn btn-default"><i style={{position:'relative',center:'100%'}} class="fas fa-shopping-cart fa-2x"></i></button>
                     </nav>
                 </div>
             </div>

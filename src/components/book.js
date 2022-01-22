@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './header.js'
-import Footer from './footer.js'
-import Spinner from './spinner.js';
+// import Footer from './footer.js'
+// import Spinner from './spinner.js';
 import {setOrder} from '../firebase'
 import { useLocation,useNavigate } from 'react-router-dom';
 import './book.css'
@@ -14,7 +14,7 @@ const Book = () => {
     const location = useLocation();
     const Navigate = useNavigate();
 
-    console.log(location.state[0].Name)
+    // console.log(location.state[0].Name)
 
     const handleKart = async (book)=>{
         book.Quantity = 1;

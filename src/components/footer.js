@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className='seventh'></div>
             <div className='ninth'>
-                <u><h5></h5></u>
+                <u><h5>Follow Us:</h5></u>
                 <h6 className='first'>Github: <a href='https://github.com/chandrakiran343'>karthik-924</a></h6>
                 <h6 className='tenth'><a href='https://github.com/karthik-924'>chandrakiran343</a></h6>
                 <button onClick={()=>{window.scrollTo({top:0,behavior:'smooth'})}} style={{margin:'10px 20px 10px 20px'}} className="btn btn-default" ><span className="navbtn-style">

@@ -5,7 +5,7 @@ import CategoryList from './CategoryList'
 import Card from './card.js'
 import Header from './header';
 import Footer from './footer';
-import {useLocation,useNavigate} from 'react-router-dom'
+// import {useLocation,useNavigate} from 'react-router-dom'
 import { getCategories } from '../firebase';
 import Spinner from './spinner';
 

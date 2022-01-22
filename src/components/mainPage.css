@@ -37,7 +37,7 @@ hr{
     width: 90vw;
     height:10vh;
     border-color: black;
-    animation: 15s color infinite;
+    animation: 10s color infinite;
 }
 input{
     width: 30vw;
