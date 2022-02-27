@@ -1,5 +1,4 @@
 import React from "react";
-//npm install gh-pages — save-dev
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +22,7 @@ function App() {
   return (
    <Router>
     <Routes>
+    <Route path="/test" element={<Book />} />
     <Route path='/' element={<MainPage />} />
     <Route path='/OrderHistory' element={<OrderHistory />} />
     <Route path='/Category/*' element={<CategoryView />} />
