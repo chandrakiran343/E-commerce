@@ -118,7 +118,7 @@ const KartScreen = () => {
                         </div>
                     )})}
             </div>
-            {order.length > 0 && <Anime orders={sendData} docs={location.state} />} 
+            <Anime orders={sendData} docs={location.state} />
 
         </div>
         );
