@@ -7,7 +7,6 @@ import {
   Link
 } from "react-router-dom";
 import './App.css'
-import Countdown from './components/countdown'
 import KartScreen from './components/KartScreen'
 import MainPage from "./components/mainPage";
 import OrderHistory from "./components/OrderHistory"
@@ -23,7 +22,7 @@ function App() {
   return (
    <Router>
     <Routes>
-    <Route path="/test" element={<Countdown />} />
+    <Route path="/test" element={<Book />} />
     <Route path='/' element={<MainPage />} />
     <Route path='/OrderHistory' element={<OrderHistory />} />
     <Route path='/Category/*' element={<CategoryView />} />

@@ -9,9 +9,8 @@ const Anime = ({docs,orders}) => {
     const navigate = useNavigate();
 
     const doOrder = async(orders)=>{
-        console.log(orders)
         await PlaceOrder(orders)
-}
+    }
 
 
     const handleClick = () => {

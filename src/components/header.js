@@ -22,7 +22,7 @@ const Header = (
             setResult(searchNames)
         }
         // console.log(result)
-    },[search,docs])
+    },[search])
 
     const handleRoute = (obj)=>{
 

@@ -41,6 +41,8 @@
 }
 .lel.animating::before{
     display: block;
+    
+    
 }
 @keyframes fade {
     100%{   
@@ -50,6 +52,7 @@
         bottom:43%;
         border-radius:0.25em;
     }
+    
 }
 @keyframes progress {
     100%{left:-40%;right:-40%;}
