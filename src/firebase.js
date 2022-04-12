@@ -101,18 +101,7 @@ const firebaseConfig = {
 
     export const PlaceOrder = async (order) =>{
 
-      // console.log(order)
-      // const docRef = doc(db,'orderHistory','order')
-      // const docSnap = await getDoc(docRef)
-      // const prev = docSnap.data()['history']
-      // const orders = []
-      // prev!=={} &&orders.push(prev)
-      // orders.unshift(order)
-      // console.log(orders)
-      // await updateDoc(docRef, {
-      //   history: orders
-      // });
-      // console.log(prev)
+      
       const docRef2 =  doc(db,'kartStash','Orders')
       await updateDoc(docRef2,{
         books : []

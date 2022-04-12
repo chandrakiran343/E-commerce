@@ -23,7 +23,6 @@ const KartScreen = () => {
         try{
             const fetchItems = async () => {
                 const books = await kartItems();
-                console.log(books)
                 setOrder(books)
                 let quantityArray = []
                 let t=0, p = 0;
@@ -40,9 +39,6 @@ const KartScreen = () => {
         }catch{
             console.log('666')
         }
-        try{
-            
-        }catch{}
     },[])
     const sendData = order;
     sendData!==undefined && quantity!==undefined && sendData.forEach(i=>{
@@ -61,7 +57,6 @@ const KartScreen = () => {
         setPrice(price+lol.filter(e=>e.id===id)[0].singleprice)
         setQuan(lol)
         setTotal(total+1)
-        console.log(quantity)
         
     }
     const handleDecrement = (id) =>{
@@ -69,7 +64,7 @@ const KartScreen = () => {
         if(lol.filter(e=>e.id===id)[0].value===1){return}
         else{lol.filter(e=>e.id===id)[0].value-=1
             lol.filter(e=>e.id===id)[0].price -= lol.filter(e=>e.id===id)[0].singleprice
-            setPrice(price-lol.filter(e=>e.id===id)[0].price)
+            setPrice(price-lol.filter(e=>e.id===id)[0].singleprice)
             setQuan(lol)
             setTotal(total-1)
         }
