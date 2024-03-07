@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import './App.css'
 import KartScreen from './components/KartScreen'
-// import MainPage from "./components/mainPage";
+import MainPage from "./components/mainPage";
 import OrderHistory from "./components/OrderHistory"
 import CategoryView from "./components/CategoryView";
 // install react-router-dom with "npm i react-router-dom"
@@ -22,7 +22,7 @@ function App() {
   return (
    <Router>
     <Routes>
-    {/* <Route path="/test" element={<Book />} /> */}
+    <Route path="/test" element={<Book />} />
     <Route path='/' element={<MainPage />} />
     <Route path='/OrderHistory' element={<OrderHistory />} />
     <Route path='/Category/*' element={<CategoryView />} />
